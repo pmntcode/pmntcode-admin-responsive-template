@@ -2,20 +2,18 @@
   "name": "pmntcode-admin-responsive-template",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "build:sass": "sass --watch src/sass/main.scss public/css/main.css",
-    "build:typescript": "tsc -w -p tsconfig.json",
-    "build": "pnpm run build:sass && pnpm run build:typescript",
+    "build:sass": "sass src/sass/main.scss public/css/main.css",
+    "build:typescript": "tsc -p tsconfig.json",
+    "build": "pnpm run build:typescript && pnpm run build:sass",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "typescript": "^5.3.3",
-    "sass": "^1.71.0"
-  },
-  "dependencies": {
+    "sass": "^1.71.0",
+    "typescript": "^5.3.3"
   }
 }
