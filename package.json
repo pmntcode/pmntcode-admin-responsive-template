@@ -4,13 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "tsc --watch",
+    "build:sass": "sass --watch src/sass/main.scss public/css/main.css",
+    "build:typescript": "tsc -w -p tsconfig.json",
+    "build": "pnpm run build:sass && pnpm run build:typescript",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "sass": "^1.71.0"
+  },
+  "dependencies": {
   }
 }

@@ -1,0 +1,30 @@
+.grid {
+	display: block;
+}
+
+.grid__col {
+	width: 100%;
+}
+
+@media (min-width: 992px) {
+	.grid {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.grid__col {
+		flex: 1 0 0%;
+		padding: 0.35rem 0.5rem;
+		box-sizing: border-box;
+	}
+
+    $breakpoint: 12;
+
+    @while 1 <=$breakpoint {
+        .grid__col--width-#{$breakpoint} {
+            flex: 0 0 auto;
+            width: calc(#{$breakpoint} / 12 * 100%);
+        }
+        $breakpoint: $breakpoint - 1;
+    }
+}

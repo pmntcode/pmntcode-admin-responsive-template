@@ -1,0 +1,30 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: var(--typography-spacing-vertical) 0;
+    font-weight: var(--pmntcode-body-font-weight);
+    font-size: var(--pmntcode-body-font-size);
+}
+
+h1 {
+    --pmntcode-body-font-size: 2rem;
+}
+
+h2 {
+    --pmntcode-body-font-size: 1.75rem;
+}
+
+h3 {
+    --pmntcode-body-font-size: 1.5rem;
+}
+
+h4 {
+    --pmntcode-body-font-size: 1.25rem;
+}
+
+h5 {
+    --pmntcode-body-font-size: 1.125rem;
+}

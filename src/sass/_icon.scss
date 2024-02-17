@@ -1,0 +1,58 @@
+.pmntcode-icon {
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    background-color: var(--pmntcode-body-color);
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+.pmntcode-icon--calendar_today {
+    -webkit-mask-image: var(--pmntcode-icon-calendar_today);
+    mask-image: var(--pmntcode-icon-calendar_today);
+}
+
+.pmntcode-icon--expand_less {
+    -webkit-mask-image: var(--pmntcode-icon-expand_less);
+    mask-image: var(--pmntcode-icon-expand_less);
+}
+
+.pmntcode-icon--expand_more {
+    -webkit-mask-image: var(--pmntcode-icon-expand_more);
+    mask-image: var(--pmntcode-icon-expand_more);
+}
+
+.pmntcode-icon--contacts {
+    -webkit-mask-image: var(--pmntcode-icon-contacts);
+    mask-image: var(--pmntcode-icon-contacts);
+}
+
+.pmntcode-icon--inventory {
+    -webkit-mask-image: var(--pmntcode-icon-inventory);
+    mask-image: var(--pmntcode-icon-inventory);
+}
+
+.pmntcode-icon--corporate_fare {
+    -webkit-mask-image: var(--pmntcode-icon-corporate_fare);
+    mask-image: var(--pmntcode-icon-corporate_fare);
+}
+
+.pmntcode-icon--menu {
+    -webkit-mask-image: var(--pmntcode-icon-menu);
+    mask-image: var(--pmntcode-icon-menu);
+}
+
+.pmntcode-icon--navigate_before {
+    -webkit-mask-image: var(--pmntcode-icon-navigate_before);
+    mask-image: var(--pmntcode-icon-navigate_before);
+}
+
+.pmntcode-icon--navigate_next {
+    -webkit-mask-image: var(--pmntcode-icon-navigate_next);
+    mask-image: var(--pmntcode-icon-navigate_next);
+}
+
+.pmntcode-icon--delete {
+    -webkit-mask-image: var(--pmntcode-icon-delete);
+    mask-image: var(--pmntcode-icon-delete);
+}
