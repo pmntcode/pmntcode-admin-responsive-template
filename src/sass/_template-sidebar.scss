@@ -1,0 +1,15 @@
+.template-sidebar {
+    background-color: var(--pmntcode-template-sidebar-background);
+    border-right-style: var(--pmntcode-border-style);
+    border-right-width: var(--pmntcode-border-width);
+    border-right-color: var(--pmntcode-border-color);
+    flex: 0 0 280px;
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .template-sidebar {
+        display: block !important;
+        flex: 0 0 280px !important;
+    }
+}

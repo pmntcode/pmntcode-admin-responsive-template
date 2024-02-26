@@ -4,9 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "build:sass": "sass src/sass/main.scss public/css/main.css",
-    "build:typescript": "tsc -p tsconfig.json",
-    "build": "pnpm run build:typescript && pnpm run build:sass",
+    "build:sass": "sass -w src/sass/main.scss public/css/main.css",
+    "build:typescript": "tsc --watch -p tsconfig.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

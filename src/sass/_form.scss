@@ -1,0 +1,109 @@
+input:not([type=checkbox], [type=radio], [type=range], [type=file]),
+select,
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: var(--pmntcode-form-element-spacing-vertical) var(--pmntcode-form-element-spacing-horizontal);
+}
+
+input,
+select,
+textarea {
+    --background-color: var(--pmntcode-form-element-background-color);
+    --color: var(--pmntcode-form-element-color);
+    border-width: var(--pmntcode-border-width);
+    border-style: var(--pmntcode-border-style);
+    border-color: var(--pmntcode-border-color);
+    border-radius: var(--pmntcode-border-radius);
+    outline: 0;
+    background-color: var(--background-color);
+    color: var(--pmntcode-body-color);
+    font-weight: var(--pmntcode-body-font-weight);
+    font-size: var(--pmntcode-body-font-size);
+    line-height: var(--pmntcode-body-line-height);
+    width: 100%;
+    margin-bottom: var(--pmntcode-spacing);
+}
+
+select:not([multiple], [size]) {
+    padding-right: calc(var(--pmntcode-form-element-spacing-horizontal) + 1.5rem);
+    padding-left: var(--pmntcode-form-element-spacing-horizontal);
+    padding-inline-start: var(--pmntcode-form-element-spacing-horizontal);
+    padding-inline-end: calc(var(--pmntcode-form-element-spacing-horizontal) + 1.5rem);
+    background-image: var(--pmntcode-icon-chevron);
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1rem 0.75rem;
+}
+
+textarea {
+    min-height: 6.25rem;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    margin-bottom: var(--pmntcode-spacing);
+}
+
+.input-group * {
+    margin-bottom: 0;
+}
+
+.input-group-text {
+    --background-color: var(--pmntcode-form-element-background-color);
+    --pmntcode-border-color: var(--pmntcode-form-element-border-color);
+    padding: var(--pmntcode-form-element-spacing-vertical) var(--pmntcode-form-element-spacing-horizontal);
+    background-color: var(--template-content-background);
+    border-width: var(--pmntcode-border-width);
+    border-style: var(--pmntcode-border-style);
+    border-color: var(--pmntcode-border-color);
+    border-radius: var(--pmntcode-border-radius);
+    color: var(--pmntcode-body-color);
+    outline: 0;
+    font-weight: var(--pmntcode-body-font-weight);
+    font-size: var(--pmntcode-body-font-size);
+    line-height: var(--pmntcode-body-line-height);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-group-text:not(:last-child) {
+    border-right-width: 0;
+}
+
+.input-group-text:not(:first-child) {
+    border-left-width: 0;
+}
+
+.input-group>:not(:last-child) {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.input-group>:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.input-group input {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+}
+
+.input-group button {
+    width: auto;
+}

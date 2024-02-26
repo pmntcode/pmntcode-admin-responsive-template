@@ -1,0 +1,35 @@
+.custom-file {
+    position: relative;
+    display: inline-block;
+    width: auto;
+
+    .custom-file-input {
+        position: absolute;
+        left: -9999px;
+    }
+
+    .custom-file-label {
+        display: inline-block;
+        padding: 10px 15px;
+        font-size: 16px;
+        font-weight: normal;
+        color: #495057;
+        background-color: #e9ecef;
+        border: 1px solid #ced4da;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .custom-file-names {
+        display: block;
+        font-size: 16px;
+
+        .remove-button {
+            margin-bottom: 0;
+
+            i {
+                background-color: var(--pmntcode-danger-color);
+            }
+        }
+    }
+}

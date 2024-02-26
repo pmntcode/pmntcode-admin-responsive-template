@@ -1,12 +1,12 @@
 "use strict";
-var CustomFileInput = /** @class */ (function () {
-    function CustomFileInput(inputId, namesDivId) {
+var CustomFile = /** @class */ (function () {
+    function CustomFile(inputId, namesDivId) {
         var _this = this;
         this.fileInput = document.getElementById(inputId);
         this.fileNamesDiv = document.getElementById(namesDivId);
         this.fileInput.addEventListener('change', function () { return _this.handleFileChange(); });
     }
-    CustomFileInput.prototype.handleFileChange = function () {
+    CustomFile.prototype.handleFileChange = function () {
         var _this = this;
         var files = this.fileInput.files;
         if (files) {
@@ -31,8 +31,8 @@ var CustomFileInput = /** @class */ (function () {
             }
         }
     };
-    CustomFileInput.prototype.removeFile = function (fileDiv) {
+    CustomFile.prototype.removeFile = function (fileDiv) {
         fileDiv.remove();
     };
-    return CustomFileInput;
+    return CustomFile;
 }());

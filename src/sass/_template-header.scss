@@ -1,0 +1,14 @@
+.template-header {
+    background-color: var(--pmntcode-template-header-background);
+    color: var(--pmntcode-template-header-color);
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.template-header a {
+    color: var(--pmntcode-template-header-color);
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+}

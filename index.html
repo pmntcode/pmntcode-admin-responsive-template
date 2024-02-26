@@ -16,10 +16,10 @@
 <body>
   <div class="template-container">
     <header class="template-header">
-      <a href="index.html">Application name</a>
       <button type="button" class="sidebar-toggle" role="button">
         <i class="pmntcode-icon pmntcode-icon--menu"></i>
       </button>
+      <a href="index.html">Application name</a>
     </header>
     <div class="template-content-container">
       <aside class="template-sidebar">
@@ -44,7 +44,7 @@
               Link with submenu A
               <span class="arrow"><i class="pmntcode-icon"></i></span>
             </a>
-            <ul class="sidebar-menu submenu">
+            <ul class="sidebar-menu">
               <li>
                 <a href="">Link</a>
               </li>
@@ -59,7 +59,7 @@
               Link with submenu B
               <span class="arrow"><i class="pmntcode-icon"></i></span>
             </a>
-            <ul class="sidebar-menu submenu">
+            <ul class="sidebar-menu">
               <li>
                 <a href="">Link</a>
               </li>
@@ -75,7 +75,7 @@
           <h2 class="content-header-title">Content Header</h2>
         </header>
         <div class="content-body">
-          <h2>Elements</h2>
+          <h2>Content</h2>
 
           <article>
             <header>Headings</header>
@@ -97,10 +97,10 @@
             <button type="button" class="--pmntcode-button-contrast-color" role="button">Contrast</button>
           </article>
 
-          <article>
-            <header>Forms</header>
+          <h2>Forms</h2>
 
-            <h2>Input</h2>
+          <article>
+            <header>Input</header>
 
             <input type="text" name="text" placeholder="Text" aria-label="Text">
             <input type="email" name="email" placeholder="Email" aria-label="Email" autocomplete="email">
@@ -108,31 +108,41 @@
             <input type="password" name="password" placeholder="Password" aria-label="Password">
             <input type="tel" name="tel" placeholder="Tel" aria-label="Tel" autocomplete="tel">
             <input type="url" name="url" placeholder="Url" aria-label="Url">
+          </article>
 
-            <h2>Datetime input</h2>
+          <article>
+            <header>Datetime input</header>
 
             <input type="date" name="date" aria-label="Date" />
             <input type="datetime-local" name="datetime-local" aria-label="Datetime local" />
             <input type="month" name="month" aria-label="Month" />
             <input type="time" name="time" aria-label="Time" />
+          </article>
 
-            <h2>File input</h2>
+          <article>
+            <header>File input</header>
 
-            <div class="custom-file">
-              <label class="custom-file-label" for="customFile">Escolha um arquivo</label>
-              <input type="file" class="custom-file-input" id="customFile">
-              <div id="customFileNames" class="file-names"></div>
+            <div>
+              <label>Single file input</label>
+              <div class="custom-file">
+                <label class="custom-file-label" for="customFile">Choose File</label>
+                <input type="file" class="custom-file-input" id="customFile">
+                <div id="customFileNames" class="custom-file-names"></div>
+              </div>
             </div>
 
-            <h2>File input multiple</h2>
-
-            <div class="custom-file">
-              <label class="custom-file-label" for="customFileMultiple">Escolha um arquivo</label>
-              <input type="file" class="custom-file-input" id="customFileMultiple" multiple>
-              <div id="customFileMultipleFileNames" class="file-names"></div>
+            <div>
+              <label>Multiple file input</label>
+              <div class="custom-file">
+                <label class="custom-file-label" for="customFileMultiple">Choose File</label>
+                <input type="file" class="custom-file-input" id="customFileMultiple" multiple>
+                <div id="customFileMultipleFileNames" class="custom-file-names"></div>
+              </div>
             </div>
+          </article>
 
-            <h2>Input group</h2>
+          <article>
+            <header>Input group</header>
 
             <div class="input-group">
               <span class="input-group-text">$</span>
@@ -153,8 +163,10 @@
               <input type="text">
               <button type="button" class="--pmntcode-button-secondary-color">Button</button>
             </div>
+          </article>
 
-            <h2>Datepicker</h2>
+          <article>
+            <header>Datepicker</header>
 
             <div class="input-group">
               <input type="tel" id="inputCalendar">
@@ -165,12 +177,16 @@
             </div>
             <div id="calendarContainer" class="calendar-container">
             </div>
+          </article>
 
-            <h2>Textarea</h2>
+          <article>
+            <header>Textarea</header>
 
             <textarea></textarea>
+          </article>
 
-            <h2>Select</h2>
+          <article>
+            <header>Select</header>
 
             <select>
               <option value="" selected disabled>Select your favorite programming language...</option>
@@ -187,8 +203,10 @@
               <option value="Ruby">Ruby</option>
               <option value="Python">Python</option>
             </select>
+          </article>
 
-            <h2>Form Grid</h2>
+          <article>
+            <header>Form Grid</header>
 
             <form>
               <div class="grid">
@@ -216,6 +234,16 @@
           </article>
 
           <h2>Components</h2>
+
+          <article>
+            <header>Card</header>
+
+            <article>
+              <header>Header</header>
+              Body
+              <footer>Footer</footer>
+            </article>
+          </article>
         </div>
       </main>
     </div>
@@ -224,14 +252,14 @@
   <script src="public/js/Sidebar.js"></script>
   <script src="public/js/Calendar.js"></script>
   <script src="public/js/MaskedInput.js"></script>
-  <script src="public/js/FileInput.js"></script>
+  <script src="public/js/CustomFile.js"></script>
   <script>
     const inputCalendar = new Calendar("calendarContainer", "inputCalendar", enUSConfig);
     const inputElement = document.getElementById('inputCalendar');
     const maskPattern = '##/##/####';
     new MaskedInput(inputElement, maskPattern);
-    new CustomFileInput('customFile', 'customFileNames');
-    new CustomFileInput('customFileMultiple', 'customFileMultipleFileNames');
+    new CustomFile('customFile', 'customFileNames');
+    new CustomFile('customFileMultiple', 'customFileMultipleFileNames');
   </script>
 </body>
 

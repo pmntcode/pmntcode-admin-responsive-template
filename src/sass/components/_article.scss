@@ -1,0 +1,34 @@
+article {
+    margin: var(--pmntcode-block-spacing-vertical) 0;
+    padding: var(--pmntcode-block-spacing-vertical) var(--block-spacing-horizontal);
+    border-radius: var(--pmntcode-border-radius);
+    background-color: var(--pmntcode-primary-color);
+    border-style: var(--pmntcode-border-style);
+    border-width: var(--pmntcode-border-width);
+    border-color: var(--pmntcode-border-color);
+
+    header,
+    footer {
+        margin-right: calc(var(--block-spacing-horizontal) * -1);
+        margin-left: calc(var(--block-spacing-horizontal) * -1);
+        padding: calc(var(--pmntcode-block-spacing-vertical) * 0.66) var(--block-spacing-horizontal);
+        background-color: var(--template-content-background);
+        font-weight: 500;
+    }
+
+    header {
+        margin-top: calc(var(--pmntcode-block-spacing-vertical) * -1);
+        margin-bottom: var(--pmntcode-block-spacing-vertical);
+        border-bottom: var(--pmntcode-border-width) solid var(--pmntcode-card-border-color);
+        border-top-right-radius: var(--pmntcode-border-radius);
+        border-top-left-radius: var(--pmntcode-border-radius);
+    }
+
+    footer {
+        margin-top: var(--pmntcode-block-spacing-vertical);
+        margin-bottom: calc(var(--pmntcode-block-spacing-vertical) * -1);
+        border-top: var(--pmntcode-border-width) solid var(--pmntcode-card-border-color);
+        border-top-right-radius: var(--pmntcode-border-radius);
+        border-top-left-radius: var(--pmntcode-border-radius);
+    }
+}

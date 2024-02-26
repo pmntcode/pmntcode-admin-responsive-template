@@ -1,4 +1,4 @@
-class CustomFileInput {
+class CustomFile {
     private fileInput: HTMLInputElement;
     private fileNamesDiv: HTMLDivElement;
 

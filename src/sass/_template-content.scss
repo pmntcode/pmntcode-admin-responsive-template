@@ -1,0 +1,21 @@
+.template-content {
+    flex: 1;
+    position: relative;
+    min-height: 100vh;
+    background-color: var(--template-content-background);
+}
+
+.template-content-container.sidebar-active .template-content {
+    display: none;
+}
+
+.template-content-container.sidebar-active .template-sidebar {
+    flex: 0 0 100%;
+    display: block;
+}
+
+@media (min-width: 992px) {
+    .template-content {
+        display: block !important;
+    }
+}
